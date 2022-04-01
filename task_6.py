@@ -13,7 +13,8 @@ def lambda_map():
 
 def lambda_reduce():
     """кумулирует числа"""
-    print(int(reduce(lambda x, y: x*y, [4, 5], 10))) 
+    result = reduce(lambda x, y: x*y, [4, 5], 10)
+    print(result)
     # не хочет выводить в list, выводит только в int. Почему?
 
 def lambda_filter():
@@ -23,6 +24,5 @@ def lambda_filter():
 if __name__ == '__main__':
    #decorator_func()
    #lambda_map()
-   #lambda_reduce()
-   lambda_filter()
-   #hjvh
+   lambda_reduce()
+#    lambda_filter()
